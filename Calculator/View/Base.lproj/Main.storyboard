@@ -17,16 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20s-QJ-vc4">
-                                <rect key="frame" x="0.0" y="44" width="414" height="409"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="272.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c98-9f-zjV">
-                                        <rect key="frame" x="0.0" y="221.5" width="394" height="187.5"/>
+                                        <rect key="frame" x="0.0" y="138.5" width="394" height="104"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="45"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9 + 8" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wV9-87-zCw">
-                                        <rect key="frame" x="0.0" y="34" width="394" height="187.5"/>
+                                        <rect key="frame" x="0.0" y="34" width="394" height="104.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="45"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -38,15 +38,19 @@
                                     <constraint firstItem="c98-9f-zjV" firstAttribute="height" secondItem="wV9-87-zCw" secondAttribute="height" id="tiT-Hz-BwX"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="eVc-20-h6L">
-                                <rect key="frame" x="10" y="453" width="394" height="409"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eVc-20-h6L">
+                                <rect key="frame" x="10" y="316.5" width="394" height="545.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YuL-MO-p2X">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="53"/>
+                                        <rect key="frame" x="22" y="0.0" width="350" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2K-N6-uUh" customClass="RoundedButton" customModule="Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="91" height="53"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="CrT-u7-Ikf"/>
+                                                    <constraint firstAttribute="width" constant="80" id="DmQ-bW-7st"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="AC">
@@ -54,13 +58,17 @@
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="30"/>
+                                                        <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHQ-Z0-CBB" customClass="RoundedButton" customModule="Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="101" y="0.0" width="91" height="53"/>
+                                                <rect key="frame" x="90" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="8A9-m6-avB"/>
+                                                    <constraint firstAttribute="width" constant="80" id="u0w-KD-xxU"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="+/-">
@@ -68,13 +76,17 @@
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="30"/>
+                                                        <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZn-4E-21x" customClass="RoundedButton" customModule="Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="202" y="0.0" width="91" height="53"/>
+                                                <rect key="frame" x="180" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="OXl-j0-ZeQ"/>
+                                                    <constraint firstAttribute="width" constant="80" id="vF1-K6-5F1"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="%">
@@ -82,13 +94,17 @@
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="30"/>
+                                                        <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qB0-py-r4u" customClass="RoundedButton" customModule="Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="303" y="0.0" width="91" height="53"/>
+                                                <rect key="frame" x="270" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="8Pi-yg-XYg"/>
+                                                    <constraint firstAttribute="width" constant="80" id="Bqv-xu-Md6"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="÷">
@@ -96,18 +112,22 @@
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="30"/>
+                                                        <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1cy-Ka-kU7">
-                                        <rect key="frame" x="0.0" y="88.5" width="394" height="53"/>
+                                        <rect key="frame" x="22" y="116.5" width="350" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHr-cD-bHF" customClass="RoundedButton" customModule="Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="91" height="53"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.16769363934343506" green="0.16769363934343506" blue="0.16769363934343506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="5fx-zy-aSS"/>
+                                                    <constraint firstAttribute="width" constant="80" id="ejg-ow-V0O"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="7">
@@ -115,13 +135,17 @@
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="30"/>
+                                                        <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZAj-1s-VDz" customClass="RoundedButton" customModule="Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="101" y="0.0" width="91" height="53"/>
+                                                <rect key="frame" x="90" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.16769363934343506" green="0.16769363934343506" blue="0.16769363934343506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="481-fO-4up"/>
+                                                    <constraint firstAttribute="height" constant="80" id="Mhg-oo-eIP"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="8">
@@ -129,13 +153,17 @@
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="30"/>
+                                                        <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKY-Up-Dm2" customClass="RoundedButton" customModule="Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="202" y="0.0" width="91" height="53"/>
+                                                <rect key="frame" x="180" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.16769363934343506" green="0.16769363934343506" blue="0.16769363934343506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="Rrf-NO-ttt"/>
+                                                    <constraint firstAttribute="height" constant="80" id="pCh-TD-bvw"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="9">
@@ -143,13 +171,17 @@
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="30"/>
+                                                        <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Apq-oZ-7SX" customClass="RoundedButton" customModule="Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="303" y="0.0" width="91" height="53"/>
+                                                <rect key="frame" x="270" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="H96-ge-0Pc"/>
+                                                    <constraint firstAttribute="height" constant="80" id="yrR-vh-c4G"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="×">
@@ -157,18 +189,22 @@
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="30"/>
+                                                        <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qeX-es-X7a">
-                                        <rect key="frame" x="0.0" y="177" width="394" height="53"/>
+                                        <rect key="frame" x="22" y="233" width="350" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2QY-Us-Fz4" customClass="RoundedButton" customModule="Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="91" height="53"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.16769363934343506" green="0.16769363934343506" blue="0.16769363934343506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="x3m-1f-xoI"/>
+                                                    <constraint firstAttribute="width" constant="80" id="yZs-sL-eVs"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="4">
@@ -176,13 +212,17 @@
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="30"/>
+                                                        <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1D-yZ-Ci0" customClass="RoundedButton" customModule="Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="101" y="0.0" width="91" height="53"/>
+                                                <rect key="frame" x="90" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.16769363934343506" green="0.16769363934343506" blue="0.16769363934343506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="UJY-L0-hSV"/>
+                                                    <constraint firstAttribute="height" constant="80" id="mE3-hN-ZdX"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="5">
@@ -190,13 +230,17 @@
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="30"/>
+                                                        <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uds-ih-79t" customClass="RoundedButton" customModule="Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="202" y="0.0" width="91" height="53"/>
+                                                <rect key="frame" x="180" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.16769363934343506" green="0.16769363934343506" blue="0.16769363934343506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="GBe-Ol-1mc"/>
+                                                    <constraint firstAttribute="height" constant="80" id="T2n-o9-Wzd"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="6">
@@ -204,13 +248,17 @@
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="30"/>
+                                                        <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kUU-lf-oCi" customClass="RoundedButton" customModule="Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="303" y="0.0" width="91" height="53"/>
+                                                <rect key="frame" x="270" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="AmH-Ki-zba"/>
+                                                    <constraint firstAttribute="height" constant="80" id="Jm1-TY-Br7"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="−">
@@ -218,18 +266,22 @@
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="30"/>
+                                                        <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RjX-0M-Z9t">
-                                        <rect key="frame" x="0.0" y="265.5" width="394" height="53"/>
+                                        <rect key="frame" x="22" y="349" width="350" height="80"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TU5-YV-r0t" customClass="RoundedButton" customModule="Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="91" height="53"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.16769363934343506" green="0.16769363934343506" blue="0.16769363934343506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="IwV-du-PHK"/>
+                                                    <constraint firstAttribute="width" constant="80" id="Y77-Jl-wfi"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="1">
@@ -237,13 +289,17 @@
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="30"/>
+                                                        <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bU8-u9-cKz" customClass="RoundedButton" customModule="Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="101" y="0.0" width="91" height="53"/>
+                                                <rect key="frame" x="90" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.16769363934343506" green="0.16769363934343506" blue="0.16769363934343506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="B7m-8f-FmR"/>
+                                                    <constraint firstAttribute="width" constant="80" id="OSn-41-bKe"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="2">
@@ -251,13 +307,17 @@
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="30"/>
+                                                        <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSU-MC-3LV" customClass="RoundedButton" customModule="Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="202" y="0.0" width="91" height="53"/>
+                                                <rect key="frame" x="180" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="0.16769363934343506" green="0.16769363934343506" blue="0.16769363934343506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="KGi-FA-qdh"/>
+                                                    <constraint firstAttribute="height" constant="80" id="atg-eb-rQj"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="3">
@@ -265,13 +325,17 @@
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="30"/>
+                                                        <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkf-ZB-Vgz" customClass="RoundedButton" customModule="Calculator" customModuleProvider="target">
-                                                <rect key="frame" x="303" y="0.0" width="91" height="53"/>
+                                                <rect key="frame" x="270" y="0.0" width="80" height="80"/>
                                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="KZk-lz-eWU"/>
+                                                    <constraint firstAttribute="width" constant="80" id="wDk-aj-rYn"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="+">
@@ -279,21 +343,24 @@
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <real key="value" value="30"/>
+                                                        <real key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fL5-rv-KNC">
-                                        <rect key="frame" x="0.0" y="354" width="394" height="55"/>
+                                        <rect key="frame" x="22" y="465.5" width="350" height="80"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vOe-zS-qXO">
-                                                <rect key="frame" x="0.0" y="0.0" width="192" height="55"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="170" height="80"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwO-dy-1lH" customClass="RoundedButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="192" height="55"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="80"/>
                                                         <color key="backgroundColor" red="0.16769363934343506" green="0.16769363934343506" blue="0.16769363934343506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="Hke-pA-TX2"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" title="0">
@@ -308,33 +375,41 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="d2a-wH-YMx">
-                                                <rect key="frame" x="202" y="0.0" width="192" height="55"/>
+                                                <rect key="frame" x="180" y="0.0" width="170" height="80"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdK-uu-GkV" customClass="RoundedButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="55"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                         <color key="backgroundColor" red="0.16769363934343506" green="0.16769363934343506" blue="0.16769363934343506" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title=".">
-                                                            <fontDescription key="titleFontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
-                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </buttonConfiguration>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="80" id="1cp-PI-7Hc"/>
+                                                            <constraint firstAttribute="height" constant="80" id="QnC-dk-mKa"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title=".">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="30"/>
+                                                                <real key="value" value="40"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAA-RE-O9x" customClass="RoundedButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="101" y="0.0" width="91" height="55"/>
+                                                        <rect key="frame" x="90" y="0.0" width="80" height="80"/>
                                                         <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="=">
-                                                            <fontDescription key="titleFontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
-                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </buttonConfiguration>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="80" id="ku9-8k-VjM"/>
+                                                            <constraint firstAttribute="width" constant="80" id="lsc-dZ-DFl"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="=">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                <real key="value" value="30"/>
+                                                                <real key="value" value="40"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </button>
@@ -354,13 +429,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eVc-20-h6L" secondAttribute="bottom" id="OeE-xo-75x"/>
                             <constraint firstItem="eVc-20-h6L" firstAttribute="top" secondItem="20s-QJ-vc4" secondAttribute="bottom" id="Oy6-BK-PL1"/>
                             <constraint firstItem="20s-QJ-vc4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UUr-hE-fvZ"/>
-                            <constraint firstItem="eVc-20-h6L" firstAttribute="height" secondItem="20s-QJ-vc4" secondAttribute="height" id="V7U-sI-7pr"/>
+                            <constraint firstItem="eVc-20-h6L" firstAttribute="height" secondItem="20s-QJ-vc4" secondAttribute="height" multiplier="2" id="V7U-sI-7pr"/>
                             <constraint firstItem="20s-QJ-vc4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Vk3-yJ-RH2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="20s-QJ-vc4" secondAttribute="trailing" id="bRn-Sa-B09"/>
                             <constraint firstItem="eVc-20-h6L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="eT3-GN-4AB"/>
                             <constraint firstItem="c98-9f-zjV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eei-Pi-k2F"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eVc-20-h6L" secondAttribute="trailing" constant="10" id="qkQ-Gm-w9Z"/>
-                            <constraint firstItem="20s-QJ-vc4" firstAttribute="bottom" secondItem="c98-9f-zjV" secondAttribute="bottom" id="tg8-KR-2XP"/>
+                            <constraint firstItem="20s-QJ-vc4" firstAttribute="bottom" secondItem="c98-9f-zjV" secondAttribute="bottom" constant="30" id="tg8-KR-2XP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wV9-87-zCw" secondAttribute="trailing" constant="20" id="tpW-Ez-gD9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c98-9f-zjV" secondAttribute="trailing" constant="20" id="z1Y-Wh-eCi"/>
                         </constraints>
@@ -385,7 +460,7 @@
             <size key="intrinsicContentSize" width="30" height="53"/>
         </designable>
         <designable name="GAA-RE-O9x">
-            <size key="intrinsicContentSize" width="44" height="55"/>
+            <size key="intrinsicContentSize" width="30" height="53"/>
         </designable>
         <designable name="PKY-Up-Dm2">
             <size key="intrinsicContentSize" width="30" height="53"/>
@@ -412,7 +487,7 @@
             <size key="intrinsicContentSize" width="30" height="53"/>
         </designable>
         <designable name="jdK-uu-GkV">
-            <size key="intrinsicContentSize" width="33" height="55"/>
+            <size key="intrinsicContentSize" width="30" height="53"/>
         </designable>
         <designable name="kUU-lf-oCi">
             <size key="intrinsicContentSize" width="30" height="53"/>
