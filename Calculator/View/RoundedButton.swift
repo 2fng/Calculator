@@ -16,7 +16,7 @@ class RoundedButton: UIButton {
     var cornerRadius: CGFloat {
         set (newValue) {
             customCornerRadius = newValue
-            layer.cornerRadius = frame.height / 2
+            layer.cornerRadius = customCornerRadius
         } get {
             return customCornerRadius
         }
