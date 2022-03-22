@@ -78,8 +78,8 @@
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <imageReference key="image" image="delete.backward" catalog="system" symbolScale="large"/>
-                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20" scale="large" weight="bold"/>
+                                                    <imageReference key="image" image="delete.backward" catalog="system" symbolScale="default"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" scale="large" weight="bold"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -558,7 +558,7 @@
             <size key="intrinsicContentSize" width="30" height="53"/>
         </designable>
         <designable name="mHQ-Z0-CBB">
-            <size key="intrinsicContentSize" width="33.5" height="41"/>
+            <size key="intrinsicContentSize" width="39" height="41"/>
         </designable>
         <designable name="q1D-yZ-Ci0">
             <size key="intrinsicContentSize" width="30" height="53"/>

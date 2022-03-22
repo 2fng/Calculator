@@ -12,12 +12,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var calculatorWorking: UILabel!
     @IBOutlet weak var calculatorResult: UILabel!
     
-    var workingSection = ""
+    var workingSection = "9 + 8"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        clearAll()
+        //clearAll()
     }
     
     func clearAll() {
@@ -33,7 +33,10 @@ class ViewController: UIViewController {
     
     
     @IBAction func backSpaceTapped(_ sender: Any) {
-        
+        if workingSection != "" {
+            workingSection.removeLast()
+            calculatorWorking.text = workingSection
+        }
     }
     
     @IBAction func percentTapped(_ sender: Any) {
