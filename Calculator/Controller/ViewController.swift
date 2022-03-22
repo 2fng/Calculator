@@ -101,7 +101,7 @@ class ViewController: UIViewController {
     }
     
     func isSpecialCharacter(char: Character) -> Bool {
-        if (char == "%" || char == "/" || char == "*" || char == "-" || char == "+" || char == ".") {
+        if (char == "/" || char == "*" || char == "-" || char == "+" || char == ".") {
             return true
         }
         
