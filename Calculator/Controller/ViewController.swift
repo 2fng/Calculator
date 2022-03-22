@@ -17,10 +17,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        clearAll()
     }
     
+    func clearAll() {
+        workingSection = ""
+        calculatorWorking.text = ""
+        calculatorResult.text = ""
+    }
+    
+    //MARK: Operator's IBAction
     @IBAction func allClearTapped(_ sender: Any) {
-        
+        clearAll()
     }
     
     
@@ -52,6 +60,7 @@ class ViewController: UIViewController {
         
     }
     
+    //MARK: Number's IBAction
     @IBAction func numberTapped(_ sender: Any) {
         
     }
