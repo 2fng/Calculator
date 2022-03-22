@@ -114,8 +114,8 @@ class ViewController: UIViewController {
     
     //MARK: Number's IBAction
     @IBAction func numberTapped(_ sender: UIButton) {
-        let temp = sender.titleLabel?.text
-        workingSection = workingSection + temp!
+        let temp = (sender.titleLabel?.text)! + ".0"
+        workingSection = workingSection + temp
         calculatorWorking.text = workingSection
     }
 }
